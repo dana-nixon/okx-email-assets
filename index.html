@@ -194,6 +194,78 @@
   }
 
   .help-text strong { color: #aaa; }
+
+  /* ── RESPONSIVE / MOBILE ──────────────────────── */
+  @media (max-width: 960px) {
+    .app {
+      flex-direction: column;
+    }
+
+    .form-panel {
+      width: 100%;
+      min-width: unset;
+      max-height: unset;
+      border-right: none;
+      border-bottom: 1px solid #1e1e1e;
+      padding: 24px 20px;
+    }
+
+    .preview-panel {
+      max-height: unset;
+      padding: 24px 16px;
+      align-items: stretch;
+    }
+
+    .preview-header {
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .preview-card {
+      width: 100%;
+      min-width: unset;
+      padding: 20px;
+      overflow-x: auto;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .form-panel {
+      padding: 20px 16px;
+    }
+
+    .preview-panel {
+      padding: 20px 12px;
+    }
+
+    .preview-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .preview-header h2 {
+      font-size: 14px;
+    }
+
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+
+    .preview-card {
+      padding: 16px;
+      border-radius: 8px;
+    }
+
+    .form-logo img {
+      height: 16px;
+    }
+
+    .form-panel h1 {
+      font-size: 18px;
+    }
+  }
 </style>
 </head>
 <body>
